@@ -1,0 +1,13 @@
+Search:
+<input type="text" ng-model="searchText">
+<button ng-click="search()">Search</button>
+
+</br>
+List of ancients
+<div ng-repeat="ancient in ancients">
+  Name: {{ancient.name | uppercase}}</br>
+  Superpower: {{ancient.superpower | uppercase}}</br>
+  End of era: {{ancient.end_of_era }}</br>
+</div>
+
+<button ng-click="showError()">Show Error</button>

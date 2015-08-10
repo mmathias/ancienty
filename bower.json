@@ -1,0 +1,20 @@
+{
+  "name": "Ancienty",
+  "version": "0.0.0",
+  "authors": [
+    "Magno Mathias <magnomathias21@gmail.com>"
+  ],
+  "description": "Ancienty API consumer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.4.3",
+    "angular-route": "~1.4.3"
+  }
+}
