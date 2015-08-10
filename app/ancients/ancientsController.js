@@ -2,7 +2,7 @@
 
 angular.module('Ancienty.ancient')
 
-.controller('AncientsController', ['$scope', '$http', function($scope, $http){
+.controller('AncientsController', ['$scope', '$http', '$window', function($scope, $http, $window){
   $http.get('https://athena-7.herokuapp.com/ancients.json')
   .then(function(response) {
     $scope.ancients = response.data;
@@ -20,7 +20,7 @@ angular.module('Ancienty.ancient')
     .then(function(response) {
       $scope.ancients = response.data;
     }, function(response) {
-      alert(response.data.error);
+      $window.alert(response.data.error);
     });
   }
 }]);
